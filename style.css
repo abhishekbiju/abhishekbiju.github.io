@@ -108,18 +108,17 @@ body.drivers-page .driver h3 {
     margin-top: 0;
 }
 
-/* Ensure the footer does not overlap content */
 body.drivers-page footer {
     margin-top: 30px;
     padding: 20px;
     clear: both;
     text-align: center;
 }
-/* General header styles */
+
 header {
-    background-color: #20232a; /* Dark background for contrast */
+    background-color: #20232a;
     color: white;
-    padding: 20px 0; /* Adjust padding as needed */
+    padding: 20px 0;
     text-align: center;
 }
 
