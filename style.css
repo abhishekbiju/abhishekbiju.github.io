@@ -12,25 +12,31 @@ header {
     text-align: center;
 }
 
+/* Navigation list styling */
 nav ul {
     list-style-type: none;
-    margin: 0;
     padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Center the navigation items */
+    gap: 20px; /* Space between navigation items */
 }
 
-nav ul li {
-    display: inline;
-    margin-right: 10px;
-}
-
+/* Navigation link styling */
 nav ul li a {
-    color: white;
+    color: #61dafb; /* Bright color for links for better visibility */
     text-decoration: none;
-    padding: 5px 10px;
-    background-color: #b71c1c;
+    padding: 10px 15px;
     border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
 }
 
+/* Navigation link hover effect */
+nav ul li a:hover, nav ul li a:focus {
+    background-color: #61dafb; /* Background color on hover/focus */
+    color: #20232a; /* Text color on hover/focus */
+    text-decoration: none; /* Remove underline from links */
+}
 main {
     padding: 20px;
     background-color: lightcoral; 
@@ -109,3 +115,12 @@ body.drivers-page footer {
     clear: both;
     text-align: center;
 }
+/* General header styles */
+header {
+    background-color: #20232a; /* Dark background for contrast */
+    color: white;
+    padding: 20px 0; /* Adjust padding as needed */
+    text-align: center;
+}
+
+
