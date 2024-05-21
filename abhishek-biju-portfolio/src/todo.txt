@@ -1,0 +1,8 @@
+1. Convert back to light mode
+
+2. Create about page
+3. Create projects page
+4. Flesh out projects page
+5. Add cool highlighter syntax
+6. Add dropshadow to pictures?
+7. Think of fun features to add
