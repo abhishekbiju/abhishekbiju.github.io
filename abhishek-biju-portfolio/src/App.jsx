@@ -5,6 +5,7 @@ import MainContent from "./components/MainContent";
 import SocialLinks from "./components/SocialLinks";
 import Footer from "./components/Footer";
 import About from "./components/About";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
@@ -14,9 +15,9 @@ function App() {
         <Routes>
           <Route path="/" element={<MainContent />} />
           <Route path="/about" element={<About />} />
-          <SocialLinks />
-          <Footer />
         </Routes>
+        <SocialLinks />
+        <Footer />
       </Router>
     </div>
   );

@@ -1,16 +1,16 @@
 import React, { useRef, useEffect } from "react";
 import { annotate } from "rough-notation";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const homeRef = useRef(null);
   const aboutRef = useRef(null);
   const workRef = useRef(null);
-  const contactRef = useRef(null);
 
   useEffect(() => {
     const annotateElement = (elementRef) => {
       const annotation = annotate(elementRef.current, {
-        type: "highlight",
+        type: "box",
         color: "#fe4f4a",
       });
       elementRef.current.addEventListener("mouseenter", () =>
@@ -25,23 +25,32 @@ const Navbar = () => {
     const homeAnnotation = annotateElement(homeRef);
     const aboutAnnotation = annotateElement(aboutRef);
     const workAnnotation = annotateElement(workRef);
-    const contactAnnotation = annotateElement(contactRef);
 
     return () => {
       homeAnnotation.remove();
       aboutAnnotation.remove();
       workAnnotation.remove();
-      contactAnnotation.remove();
     };
   }, []);
 
   return (
-    <nav className="flex justify-end p-4 bg-white text-black">
-      <ul className="flex gap-4">
-        <li ref={homeRef}>Home</li>
-        <li ref={aboutRef}>About</li>
-        <li ref={workRef}>Works</li>
-        <li ref={contactRef}>Contact</li>
+    <nav className="flex justify-center p-4 bg-white text-black border-b border-gray-200">
+      <ul className="flex gap-8 font-semibold">
+        <li ref={homeRef}>
+          <Link to="/" className="">
+            home
+          </Link>
+        </li>
+        <li ref={aboutRef}>
+          <Link to="/about" className="">
+            about
+          </Link>
+        </li>
+        <li ref={workRef}>
+          <Link to="/projects" className="">
+            projects
+          </Link>
+        </li>
       </ul>
     </nav>
   );
