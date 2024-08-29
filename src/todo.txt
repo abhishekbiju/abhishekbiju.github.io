@@ -1,0 +1,13 @@
+1. make the about page a simple webpage, add some pictures (gym, books,)
+2. add line : if you want to discuss opportunities feel free to contact me
+3. add a section for books and add some of your favorite books to read
+4. add a page for certifications and add all of your certifications in a card like format
+5. flesh out the projects page with a fresh design.
+
+then we are ready for first publish!!
+
+I'm a Software Developer, Data Scientist and Machine Learning Researcher and a Senior studying Computer Science, Data Science & Math at the University of Wisconsin-Madison. 
+I like spending my time immersed in software and data to build elegant solutions that empower us. During my degree, I have had the change to intern at Safeguard L.L.C, flydubai, Datafortune Software Solutions, and TNIE. 
+I find beauty in simplicity and am enamored by minimalistic design and innovation. In my leisure time I enjoy weightlifting, reading, music and watching sports.
+
+If you want to chat and discuss opportunities, feel free to reach out to me at abhibiju03[@]gmail[dot]com
