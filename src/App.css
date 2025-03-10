@@ -1,7 +1,13 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  color: black; /* Set default text color to black */
+}
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 0rem;
   text-align: center;
 }
 
@@ -39,4 +45,18 @@
 
 .read-the-docs {
   color: #888;
+}
+
+.main-content {
+  padding: 2rem;
+}
+
+/* Global styles for everything else excluding the splash page */
+.content {
+  margin: 40px auto;
+  max-width: 650px;
+  line-height: 1.6;
+  font-size: 18px;
+  color: black; /* Ensure text color is black */
+  padding: 0 10px;
 }

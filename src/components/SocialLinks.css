@@ -1,0 +1,24 @@
+.social-links {
+  position: fixed;
+  bottom: 1rem;
+  left: 1rem;
+  z-index: 1000;
+}
+
+.social-links-list {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.social-link {
+  font-size: 2rem;
+  color: black;
+  transition: color 0.3s ease;
+}
+
+.social-link:hover {
+  color: gray;
+}

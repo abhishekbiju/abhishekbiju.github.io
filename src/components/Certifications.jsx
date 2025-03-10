@@ -28,7 +28,7 @@ const certifications = [
 
 const Certifications = () => {
   return (
-    <div className="p-8 bg-gray-100 min-h-screen">
+    <div className="p-8 bg-gray-100 min-h-screen content">
       <h1 className="text-4xl font-bold mb-8 text-center">Certifications</h1>
       <div className="flex flex-wrap justify-center">
         {certifications.map((certification, index) => (

@@ -1,14 +1,14 @@
 // src/components/Navbar.jsx
 import React, { useRef, useEffect } from "react";
 import { annotate } from "rough-notation";
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
+import "./Navbar.css"; // Import the CSS file for styling
 
 const Navbar = () => {
   const homeRef = useRef(null);
   const aboutRef = useRef(null);
-  const workRef = useRef(null);
   const certificationsRef = useRef(null);
-  const experiencesRef = useRef(null); // New ref for Experiences
+  const experiencesRef = useRef(null);
 
   useEffect(() => {
     const annotateElement = (elementRef) => {
@@ -27,44 +27,37 @@ const Navbar = () => {
 
     const homeAnnotation = annotateElement(homeRef);
     const aboutAnnotation = annotateElement(aboutRef);
-    const workAnnotation = annotateElement(workRef);
     const certificationsAnnotation = annotateElement(certificationsRef);
-    const experiencesAnnotation = annotateElement(experiencesRef); // New annotation for Experiences
+    const experiencesAnnotation = annotateElement(experiencesRef);
 
     return () => {
       homeAnnotation.remove();
       aboutAnnotation.remove();
-      workAnnotation.remove();
       certificationsAnnotation.remove();
-      experiencesAnnotation.remove(); // Clean up the new annotation
+      experiencesAnnotation.remove();
     };
   }, []);
 
   return (
-    <nav className="flex justify-center p-4 bg-white text-black border-b border-gray-200">
-      <ul className="flex gap-8 font-semibold">
-        <li ref={homeRef}>
-          <Link to="/" className="">
+    <nav className="navbar">
+      <ul className="navbar-list">
+        <li ref={homeRef} className="navbar-item">
+          <Link to="main-content" smooth={true} duration={500}>
             home
           </Link>
         </li>
-        <li ref={aboutRef}>
-          <Link to="/about" className="">
+        <li ref={aboutRef} className="navbar-item">
+          <Link to="about" smooth={true} duration={500}>
             about
           </Link>
         </li>
-        <li ref={workRef}>
-          <Link to="/projects" className="">
-            projects
-          </Link>
-        </li>
-        <li ref={certificationsRef}>
-          <Link to="/certifications" className="">
+        <li ref={certificationsRef} className="navbar-item">
+          <Link to="certifications" smooth={true} duration={500}>
             certifications
           </Link>
         </li>
-        <li ref={experiencesRef}>
-          <Link to="/experiences" className="">
+        <li ref={experiencesRef} className="navbar-item">
+          <Link to="experiences" smooth={true} duration={500}>
             experiences
           </Link>
         </li>

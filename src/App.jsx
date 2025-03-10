@@ -5,26 +5,28 @@ import MainContent from "./components/MainContent";
 import SocialLinks from "./components/SocialLinks";
 import Footer from "./components/Footer";
 import About from "./components/About";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Certifications from "./components/Certifications";
 import Experiences from "./components/Experiences";
-import Projects from "./components/Projects";
+import "./App.css"; // Import the CSS file for styling
 
 function App() {
   return (
     <div>
-      <Router>
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<MainContent />} />
-          <Route path="/about" element={<About />} />
-
-          <Route path="/projects" element={<Projects/>}/>
-          <Route path="/certifications" element ={<Certifications/>} />
-          <Route path="/experiences" element ={<Experiences/>} />
-        </Routes>
-        <SocialLinks />
-      </Router>
+      <Navbar />
+      <div id="main-content" className="main-content">
+        <MainContent />
+      </div>
+      <div id="about">
+        <About />
+      </div>
+      <div id="certifications">
+        <Certifications />
+      </div>
+      <div id="experiences">
+        <Experiences />
+      </div>
+      <SocialLinks />
+      <Footer />
     </div>
   );
 }

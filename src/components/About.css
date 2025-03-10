@@ -1,0 +1,9 @@
+.orgLink {
+  color: black; /* Set link color to black */
+  text-decoration: none; /* Remove underline */
+  font-style: italic; /* Make the text italic */
+}
+
+.orgLink:hover {
+  color: black; /* Ensure link color remains black on hover */
+}
