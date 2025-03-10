@@ -6,7 +6,7 @@ const About = () => {
   const aboutRef = useRef(null);
 
   useEffect(() => {
-    // Select all elements with the .orgLink class and apply rough-notation underline on hover
+    // Select all elements with the .orgLink class and apply rough-notation highlight on hover
     const orgLinks = document.querySelectorAll(".orgLink");
     orgLinks.forEach((link) => {
       const highlight = annotate(link, {
@@ -23,7 +23,7 @@ const About = () => {
 
   return (
     <div className="p-8 bg-white text-black content">
-      <h1 className="text-4xl font-bold mb-4">about</h1>
+      <h1 className="text-4xl font-bold mb-4 text-left">about</h1>
       
       <p ref={aboutRef} className="text-lg">
         Senior @{" "}
@@ -71,7 +71,7 @@ const About = () => {
         >
           The New Indian Express
         </a>
-        . I like software, 
+        . I love software, 
         <a
           href="https://www.goodreads.com/abhishekbiju"
           target="_blank"
@@ -90,7 +90,7 @@ const About = () => {
         {" "}films 
         </a>
         {" "}that make me think. Reach me at{" "}
-        <span className="font-medium">abhibiju03 [at] gmail [dot] com</span>.
+        <span className="font-bold">abhibiju03 [at] gmail [dot] com</span>.
       </p>
     </div>
   );

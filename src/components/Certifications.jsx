@@ -1,44 +1,48 @@
 // src/components/Certifications.jsx
-import React from "react";
-import CertificationCard from "./CertificationCard";
-import awsMl from "../assets/aws-machine-learning.png"
-import awsSaa from "../assets/aws-saa.png"
-import awsCcp from "../assets/aws-ccp.png" 
+import React, { useEffect } from "react";
+import { annotate } from "rough-notation";
+import "./Certifications.css";
+
 // Sample data for certifications - replace with your actual certifications
 const certifications = [
   {
-    image: awsMl, // Replace with your image URL or path
     title: "AWS Certified Machine Learning - Specialty",
-    description: "Validated expertise in building, training, tuning, and deploying machine learning models on AWS using various services like SageMaker, while understanding ML frameworks and best practices.",
-    date: "August 2024",
   },
   {
-    image: awsSaa, // Replace with your image URL or path
     title: "AWS Certified Solutions Architect - Associate",
-    description: "Proven skills in designing scalable, reliable, and cost-effective cloud architectures on AWS, including selecting appropriate AWS services to meet specific technical requirements and best practices.",
-    date: "February 2024",
   },
   {
-    image: awsCcp, // Replace with your image URL or path
     title: "AWS Certified Cloud Practitioner",
-    description: "Demonstrated foundational knowledge of AWS cloud concepts, services, and architecture, enabling the ability to effectively implement cloud solutions and understand AWS billing and pricing models.",
-    date: "March 2022",
   },
+  {
+    title: "Snowflake Certified SnowPro Core",
+  }
 ];
 
 const Certifications = () => {
+  useEffect(() => {
+    const certificationItems = document.querySelectorAll(".certification-item");
+    certificationItems.forEach((item) => {
+      const highlight = annotate(item, {
+        type: "highlight",
+        color: "#b0b0b0",
+        animationDuration: 700,
+        multiline: false,
+        iterations: 1,
+      });
+      item.addEventListener("mouseenter", () => highlight.show());
+      item.addEventListener("mouseleave", () => highlight.hide());
+    });
+  }, []);
+
   return (
-    <div className="p-8 bg-gray-100 min-h-screen content">
-      <h1 className="text-4xl font-bold mb-8 text-center">Certifications</h1>
-      <div className="flex flex-wrap justify-center">
+    <div className="p-8 bg-white text-black content">
+      <h1 className="text-4xl font-bold mb-4 text-left">certifications</h1>
+      <div className="certifications-list">
         {certifications.map((certification, index) => (
-          <CertificationCard
-            key={index}
-            image={certification.image}
-            title={certification.title}
-            description={certification.description}
-            date={certification.date}
-          />
+          <p key={index} className="certification-item">
+            {certification.title}
+          </p>
         ))}
       </div>
     </div>

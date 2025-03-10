@@ -1,0 +1,13 @@
+.certification-item {
+  margin-bottom: 0rem; /* Adjust the margin to match the About section */
+  font-size: 1.125rem; /* Match the font size used in the About section */
+  line-height: 0.5; /* Match the line height used in the About section */
+  text-align: left; /* Ensure the text is left-aligned */
+  display: inline-block; /* Ensure the highlight only covers the text */
+  font-family: 'Poppins', sans-serif; /* Ensure the font family matches */
+  color: black; /* Ensure the text color matches */
+}
+
+.certification-item h2 {
+  margin: 0;
+}

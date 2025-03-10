@@ -60,3 +60,15 @@ body {
   color: black; /* Ensure text color is black */
   padding: 0 10px;
 }
+
+.content-columns {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+#about, #certifications {
+  flex: 1;
+  margin: 0 1rem;
+  text-align: left; /* Ensure the text is left-aligned */
+}

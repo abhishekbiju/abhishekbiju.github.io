@@ -7,3 +7,22 @@
 .orgLink:hover {
   color: black; /* Ensure link color remains black on hover */
 }
+
+/* filepath: /home/abhi/Projects/portfolio/abhishekbiju.github.io/src/components/Certifications.css */
+.certifications-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.certification-item {
+  margin-bottom: 1.5rem;
+}
+
+.certification-item h2 {
+  margin: 0;
+}
+
+.certification-item p {
+  margin: 0.5rem 0 0;
+}
