@@ -65,7 +65,7 @@ const Certifications = () => {
       <div className="resume-section mt-8">
         <h1 className="text-4xl font-bold mb-4 text-left">resume</h1>
         Download {""}
-        <a href="../../public/resume.pdf" download className="resume-link text-lg text-blue-500 underline">
+        <a href="abhishek_biju_resume.pdf" download className="resume-link text-lg underline">
           here
         </a>
       </div>

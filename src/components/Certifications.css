@@ -40,3 +40,27 @@
 .resume-link:hover {
   color: black; /* Ensure link color remains black on hover */
 }
+
+@media (min-width: 768px) {
+  .certifications-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+
+  .certification-item {
+    flex: 1 1 calc(50% - 1.125rem);
+    font-size: 1.125rem;
+  }
+
+  .resume-section {
+    margin-top: 3rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .certification-item {
+    flex: 1 1 calc(33.333% - 1.125rem);
+    font-size: 1.125rem;
+  }
+}
