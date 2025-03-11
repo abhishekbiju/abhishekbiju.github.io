@@ -8,7 +8,6 @@ const Navbar = () => {
   const homeRef = useRef(null);
   const aboutRef = useRef(null);
   const certificationsRef = useRef(null);
-  const experiencesRef = useRef(null);
 
   useEffect(() => {
     const annotateElement = (elementRef) => {
@@ -28,13 +27,11 @@ const Navbar = () => {
     const homeAnnotation = annotateElement(homeRef);
     const aboutAnnotation = annotateElement(aboutRef);
     const certificationsAnnotation = annotateElement(certificationsRef);
-    const experiencesAnnotation = annotateElement(experiencesRef);
 
     return () => {
       homeAnnotation.remove();
       aboutAnnotation.remove();
       certificationsAnnotation.remove();
-      experiencesAnnotation.remove();
     };
   }, []);
 
@@ -54,11 +51,6 @@ const Navbar = () => {
         <li ref={certificationsRef} className="navbar-item">
           <Link to="certifications" smooth={true} duration={500}>
             certifications
-          </Link>
-        </li>
-        <li ref={experiencesRef} className="navbar-item">
-          <Link to="experiences" smooth={true} duration={500}>
-            experiences
           </Link>
         </li>
       </ul>

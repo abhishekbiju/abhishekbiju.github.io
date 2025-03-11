@@ -89,7 +89,7 @@ const About = () => {
         >
         {" "}films 
         </a>
-        {" "}that make me think. Reach me at{" "}
+        {" "}that make me think. I also love lifting &amp; guitars. Reach me at{" "}
         <span className="font-bold">abhibiju03 [at] gmail [dot] com</span>.
       </p>
     </div>

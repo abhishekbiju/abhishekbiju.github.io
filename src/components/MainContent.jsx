@@ -56,11 +56,13 @@ const MainContent = () => {
         <p className="text-gray-500 italic my-4 centered-text">Hi, I’m Abhishek.</p>
       </div>
       <div className="image-content">
-        <img
-          src={profileImg}
-          alt="Profile"
-          className="profile-image"
-        />
+        <a href="https://youtu.be/dQw4w9WgXcQ" target="_blank" rel="noopener noreferrer">
+          <img
+            src={profileImg}
+            alt="Profile"
+            className="profile-image"
+          />
+        </a>
       </div>
     </div>
   );

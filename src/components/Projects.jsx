@@ -3,13 +3,11 @@ import React from "react";
 import ProjectCard from "../components/ProjectCard";
 
 const Projects = () => {
-  // Sample data for projects - replace with your actual projects
   const projects = [
         {
       title: "Knowledge Distillation ML Research",
       description: "Pursuing project focused on implementing knowledge-distilled/teacher-student architectures using the seminal polynomial neural network, MONet (Multilinear Operator Networks) to train smaller, computationally efficient models to deliver comparable or better model accuracy.",
       date: "August 2024",
-      // Replace with your actual GitHub repo URL
     },
     {
       title: "SkySight",

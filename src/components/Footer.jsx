@@ -1,12 +1,11 @@
 import React from "react";
+import "./Footer.css";
 
 const Footer = () => {
   return (
-    <div className="fixed bottom-4 right-4">
-      <a href="#contact" className="text-gray-500 hover:text-black">
-      Abhishek Biju Das 
-      </a>
-    </div>
+    <footer className="footer">
+      <p>© Abhishek Biju, 2025</p>
+    </footer>
   );
 };
 
