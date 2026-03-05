@@ -1,60 +1,54 @@
-// src/components/Navbar.jsx
-import React, { useRef, useEffect } from "react";
-import { annotate } from "rough-notation";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-scroll";
-import "./Navbar.css"; // Import the CSS file for styling
+import { motion } from "framer-motion";
 
 const Navbar = () => {
-  const homeRef = useRef(null);
-  const aboutRef = useRef(null);
-  const certificationsRef = useRef(null);
+  const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
-    const annotateElement = (elementRef) => {
-      const annotation = annotate(elementRef.current, {
-        type: "box",
-        color: "#fe4f4a",
-      });
-      elementRef.current.addEventListener("mouseenter", () =>
-        annotation.show()
-      );
-      elementRef.current.addEventListener("mouseleave", () =>
-        annotation.hide()
-      );
-      return annotation;
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50);
     };
-
-    const homeAnnotation = annotateElement(homeRef);
-    const aboutAnnotation = annotateElement(aboutRef);
-    const certificationsAnnotation = annotateElement(certificationsRef);
-
-    return () => {
-      homeAnnotation.remove();
-      aboutAnnotation.remove();
-      certificationsAnnotation.remove();
-    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const navLinks = [
+    { name: "home", to: "home" },
+    { name: "about", to: "about" },
+    { name: "experience", to: "experience" },
+    { name: "projects", to: "projects" },
+    { name: "certifications", to: "certifications" },
+  ];
+
   return (
-    <nav className="navbar">
-      <ul className="navbar-list">
-        <li ref={homeRef} className="navbar-item">
-          <Link to="main-content" smooth={true} duration={500}>
-            home
-          </Link>
-        </li>
-        <li ref={aboutRef} className="navbar-item">
-          <Link to="about" smooth={true} duration={500}>
-            about
-          </Link>
-        </li>
-        <li ref={certificationsRef} className="navbar-item">
-          <Link to="certifications" smooth={true} duration={500}>
-            certifications
-          </Link>
-        </li>
-      </ul>
-    </nav>
+    <motion.nav
+      initial={{ y: -100 }}
+      animate={{ y: 0 }}
+      className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrolled ? "glass py-4" : "bg-transparent py-6"
+        }`}
+    >
+      <div className="max-w-7xl mx-auto px-6 md:px-12 flex justify-between items-center">
+        <Link to="home" smooth={true} duration={500} className="text-2xl font-display font-bold text-white cursor-pointer select-none">
+          abhishek.
+        </Link>
+        <ul className="hidden md:flex gap-8">
+          {navLinks.map((link) => (
+            <li key={link.name}>
+              <Link
+                to={link.to}
+                smooth={true}
+                duration={500}
+                offset={-80}
+                className="text-gray-300 hover:text-white transition-colors cursor-pointer capitalize font-medium text-sm"
+              >
+                {link.name}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </motion.nav>
   );
 };
 

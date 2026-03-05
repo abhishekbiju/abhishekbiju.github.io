@@ -1,5 +1,36 @@
-@tailwindcss base;
-@tailwindcss components;
-@tailwindcss utilities;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-/* Add this to enforce dark mode styles */
+@layer base {
+  body {
+    @apply bg-background text-gray-200 antialiased overflow-x-hidden;
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-surface/50 backdrop-blur-md border border-white/10 shadow-lg;
+  }
+  .glass-card {
+    @apply bg-white/5 backdrop-blur-lg border border-white/10 shadow-xl rounded-2xl;
+  }
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary via-secondary to-accent;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

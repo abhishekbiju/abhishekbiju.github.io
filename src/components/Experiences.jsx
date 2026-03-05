@@ -1,101 +1,104 @@
-// src/pages/Experiences.jsx
 import React from "react";
-import ExperienceCard from "../components/ExperienceCard";
+import { motion } from "framer-motion";
 
 const Experiences = () => {
-  // Sample data for experiences - replace with your actual experiences
   const experiences = [
     {
-      company: "Safeguard L.L.C",
-      position: "Machine Learning Engineer",
+      company: "Dignifi",
+      position: "Data Engineer",
+      date: "May 2025 - Present",
       description: [
-        "Compiled comprehensive documentation for new business analyst hires, streamlining the onboarding process and significantly reducing training time.",
-        "Developed and deployed a machine learning model in Snowflake to predict customer fraud detection, enhancing the accuracy and efficiency of analyzing falsely filed insurance claims and speeding up previously labor-intensive manual review processes using semi-automated ML pipelines."
+        "Spearheaded a database redesign—'LENS'—to centralize 12 core business systems, reducing latency for commercial risk reports by 80% and enabling real-time scalability for high-frequency financial data.",
+        "Architected and administered AWS data infrastructure supporting 15+ ELT pipelines (dbt, Astro); optimized SQL transformations, improving data processing speed by 40% while maintaining 99.9% uptime and full data lineage.",
+        "Architected a RAG-based Agentic AI workflow to automate data extraction from complex financial documents, reducing manual research time by 35% and improving data ingestion accuracy."
       ],
-      date: "May 2024 - July 2024",
-      image: "https://www.stonepoint.com/wp-content/uploads/Safe-guard.jpg",
     },
     {
-      company: "flydubai",
-      position: "Data Science Intern",
+      company: "Capital One",
+      position: "Software Engineer Intern",
+      date: "Sep 2024 - Dec 2024",
       description: [
-        "Implemented real-time deployable machine learning models achieving 83.45% accuracy in predicting flight delays using flight operations data."
-,"Collaborated across Flight Ops, Engineering, and IT departments to extract insights from a vast dataset of 100,000 rows and 130 columns."
-,"Authored a comprehensive 20-page report detailing data training, conclusions, and conducted financial and technical feasibility analyses."
+        "Contracted through Capital One to engineer a high-throughput, real-time fraud detection engine using a serverless AWS ecosystem (Lambda, DynamoDB, SQS, SNS) to identify and flag suspicious transactions with sub-second latency.",
+        "Engineered a Front-Office style full-stack response system using React and Flask, providing real-time verification and 'human-in-the-loop' logic to mitigate fraudulent exposure during high-throughput transaction windows.",
+        "Optimized enterprise scalability by implementing a decoupled, event-driven architecture using Java/Spring Boot and AWS, ensuring seamless horizontal scaling and secure integration with backend systems."
       ],
-      date: "May 2023 - August 2023",
-      image: "https://media-cdn.tripadvisor.com/media/photo-s/0f/47/7d/d4/flydubai.jpg",
     },
     {
-      company: "Datafortune Software Solutions",
-      position: "Software Developer Intern",
+      company: "Safe-Guard Products International",
+      position: "Software Engineer Intern",
+      date: "May 2024 - Jul 2024",
       description: [
-        "Constructed the backend for a data-centric web application, reducing data transfer time by 14% using the CRUD framework."
-,"Generated data-driven insights supporting critical project decisions, ensuring timely product delivery."
+        "Built and deployed a fraud detection machine learning model in Snowflake, improving fraud detection accuracy by 17% and reducing manual review time by 35%.",
+        "Utilized Python and SQL to automate data preprocessing workflows, reducing processing time by 25%."
       ],
-      date: "June 2022 - September 2022",
-      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0RSXsCbRwfV1qNhwWSfED6uXs7hwNpbP8JuNWmpuVed2gaZhy9TBUPoUsjlzMy7JBWBA&usqp=CAU",
     },
     {
-      company: "Division of IT @ UW-Madison",
-      position: "Lead Technical Writer",
+      company: "UW-Madison College of Engineering",
+      position: "Machine Learning Researcher",
+      date: "Feb 2024 - May 2025",
       description: [
-        "Authored 1000+ support articles, aiding over 120,000 individuals in resolving technical issues remotely."
-,"Conducted training sessions for new Technical Writers, focusing on handling customer feedback and maximizing article ratings."
+        "Collaborated in the Machine Learning and Optimization Research Lab to implement teacher-student architectures with polynomial neural networks (MONet) using Python and TensorFlow on GCP, improving algorithm efficiency and enabling deployment on resource-constrained edge devices."
       ],
-      date: "September 2022 - Present",
-      image: "https://d1hbpr09pwz0sk.cloudfront.net/logo_url/uw-madison-division-of-information-technology-doit-f6992eb7",
     },
     {
-      company: "Google Developer Student Club @ UW-Madison",
-      position: "Vice President",
+      company: "Flydubai LLC",
+      position: "Software Engineer Intern",
+      date: "May 2023 - Aug 2023",
       description: [
-        "Organized multiple events including hackathons, speaker forums, and career-building workshops for 700+ participants.",
-        "Successfully raised over $3000 through fundraisers, sponsorships, and merchandise sales.",
+        "Developed a predictive model for supply chain optimization at Flydubai, integrating complex aviation datasets to mitigate downtime-related costs by 13%.",
+        "Architected and tuned large-scale SQL queries for 1,000,000-row datasets, achieving a 20% improvement in execution speed through indexing and schema optimization."
       ],
-      date: "September 2023 - Present",
-      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCyRyjptPHq17q2JDbHz_4N1mPGGjz44FAew&s",
-    },
-    {
-      company: "Curtin University Dubai",
-      position: "Software Developer Intern",
-      description: [
-        "Prototyped 5 UI designs for a new web page, executing A/B testing to collect usage metrics.",
-"Developed a staging environment mirroring production, saving over 15 hours in manual testing setup."
-      ],
-      date: "April 2019 - June 2019",
-      image: "https://www.edarabia.com/wp-content/uploads/2017/07/curtin-university-dubai-uae-1.jpg",
-    },
-    {
-      company: "The New Indian Express",
-      position: "Software Developer Intern",
-      description: [
-        "Developed a custom scraper and utilized Natural Language Processing to parse 20 years' worth of archived newspaper articles.",
-"Digitized articles for easy searchability, saving 15 work hours weekly and reducing labor costs.",
-"Enhanced the algorithm by 10% through dimensionality reduction and pruning techniques."
-      ],
-      date: "April 2022 - July 2022",
-      image: "https://content.jdmagicbox.com/comp/kakinada/a9/9999px884.x884.191207222003.b8a9/catalogue/the-new-indian-express-bhanugudi-junction-kakinada-newspaper-advertising-agencies-uq23u5hbho.jpg",
     },
   ];
 
   return (
-    <div className="p-8 min-h-screen content">
-      <h1 className="text-4xl font-bold mb-8 text-center">experiences</h1>
-      <div className="flex flex-wrap justify-center">
-        {experiences.map((experience, index) => (
-          <ExperienceCard
-            key={index}
-            company={experience.company}
-            position={experience.position}
-            description={experience.description} // Pass the description as an array
-            date={experience.date}
-            blurb={experience.blurb}
-            image={experience.image}
-          />
-        ))}
-      </div>
-    </div>
+    <section id="experience" className="max-w-7xl mx-auto px-6 md:px-12 pt-24 w-full">
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: "-100px" }}
+        transition={{ duration: 0.6 }}
+      >
+        <h2 className="text-4xl font-display font-bold text-white mb-16 flex items-center gap-4">
+          <span className="text-primary text-2xl">02.</span> Experience
+          <div className="h-px bg-white/10 flex-1 ml-4" />
+        </h2>
+
+        <div className="space-y-16">
+          {experiences.map((exp, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, margin: "-50px" }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+              className="relative pl-8 md:pl-0 group"
+            >
+              <div className="hidden md:block absolute left-[8.5rem] top-0 bottom-0 w-px bg-white/10 group-last:bg-transparent" />
+              <div className="absolute left-0 md:left-[8.5rem] w-3 h-3 bg-secondary rounded-full mt-1.5 -ml-1.5 border-4 border-background transition-colors group-hover:bg-primary z-10" />
+
+              <div className="md:pl-48 flex flex-col md:flex-row gap-4 md:gap-12 relative">
+                <div className="md:absolute md:left-0 md:w-32 md:text-right shrink-0">
+                  <p className="text-sm text-gray-400 font-medium tracking-wide font-mono mt-1">{exp.date}</p>
+                </div>
+                <div className="w-full">
+                  <h3 className="text-2xl font-display font-semibold text-white">{exp.position}</h3>
+                  <h4 className="text-lg text-primary font-medium mb-6">{exp.company}</h4>
+                  <ul className="space-y-4">
+                    {exp.description.map((item, i) => (
+                      <li key={i} className="text-gray-400 text-base leading-relaxed flex items-start gap-4">
+                        <span className="text-accent mt-1.5 shrink-0">▹</span>
+                        <span className="flex-1">{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            </motion.div>
+          ))}
+        </div>
+      </motion.div>
+    </section>
   );
 };
 
