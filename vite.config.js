@@ -3,6 +3,6 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  base: '/abhishekbiju.github.io/', // Ensure this matches your GitHub Pages repository name
+  base: '/', // User pages on GitHub Pages are served from the root
   publicDir: 'public', // Ensure the public directory is correctly set
 });
