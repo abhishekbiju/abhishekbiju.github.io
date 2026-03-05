@@ -77,9 +77,9 @@ const Experiences = () => {
               <div className="hidden md:block absolute left-[8.5rem] top-0 bottom-0 w-px bg-white/10 group-last:bg-transparent" />
               <div className="absolute left-0 md:left-[8.5rem] w-3 h-3 bg-secondary rounded-full mt-1.5 -ml-1.5 border-4 border-background transition-colors group-hover:bg-primary z-10" />
 
-              <div className="md:pl-48 flex flex-col md:flex-row gap-4 md:gap-12 relative">
+              <div className="md:pl-48 flex flex-col md:flex-row gap-2 md:gap-12 relative">
                 <div className="md:absolute md:left-0 md:w-32 md:text-right shrink-0">
-                  <p className="text-sm text-gray-400 font-medium tracking-wide font-mono mt-1">{exp.date}</p>
+                  <p className="text-xs md:text-sm text-gray-400 font-medium tracking-wide font-mono mt-0 md:mt-1">{exp.date}</p>
                 </div>
                 <div className="w-full">
                   <h3 className="text-2xl font-display font-semibold text-white">{exp.position}</h3>
