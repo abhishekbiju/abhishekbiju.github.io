@@ -38,7 +38,7 @@ const Hero = () => {
                                 View Work
                             </button>
                         </Link>
-                        <a href="abhishek_biju_resume.pdf" download className="w-full sm:w-auto">
+                        <a href="abhishek_biju_das_resume.pdf" download className="w-full sm:w-auto">
                             <button className="w-full px-8 py-3 glass text-white font-semibold rounded-full hover:bg-white/10 transition-colors">
                                 Resume
                             </button>
