@@ -18,7 +18,7 @@ const About = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           <div className="text-gray-400 text-lg space-y-6 leading-relaxed">
             <p>
-              Hey! I'm Abhishek. I'm a Data Engineer with a Bachelor of Science in Computer Science and Data Science from <span className="text-primary font-medium">UW–Madison</span>.
+              Hey! I'm Abhishek. I'm a Software Engineer with a Bachelor of Science in Computer Science and Data Science from <span className="text-primary font-medium">UW–Madison</span>.
             </p>
             <p>
               I specialize in building high-throughput financial systems, architecting real-time cloud infrastructure, and integrating RAG-based Agentic AI workflows. I've engineered cloud ecosystems, optimized sub-second latency data pipelines, and trained fraud detection ML models during my time at <span className="text-secondary font-medium">Dignifi</span>, <span className="text-secondary font-medium">Capital One</span>, <span className="text-secondary font-medium">Safe-Guard</span>, and <span className="text-secondary font-medium">Flydubai</span>.

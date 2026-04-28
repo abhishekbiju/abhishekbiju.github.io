@@ -5,7 +5,7 @@ const Experiences = () => {
   const experiences = [
     {
       company: "Dignifi",
-      position: "Data Engineer",
+      position: "Software Engineer",
       date: "May 2025 - Present",
       description: [
         "Spearheaded a database redesign—'LENS'—to centralize 12 core business systems, reducing latency for commercial risk reports by 80% and enabling real-time scalability for high-frequency financial data.",

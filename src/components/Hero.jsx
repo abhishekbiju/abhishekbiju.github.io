@@ -26,7 +26,7 @@ const Hero = () => {
                         Hi, I'm Abhishek
                     </motion.p>
                     <h1 className="text-4xl sm:text-5xl md:text-7xl font-display font-bold text-white mb-4 md:mb-6 leading-tight">
-                        Data Engineer with <br className="hidden sm:block" />
+                        Software Engineer with <br className="hidden sm:block" />
                         <span className="text-gradient">AI expertise</span>.
                     </h1>
                     <p className="text-gray-400 text-base sm:text-lg mb-8 max-w-xl mx-auto md:mx-0">
@@ -38,7 +38,7 @@ const Hero = () => {
                                 View Work
                             </button>
                         </Link>
-                        <a href="abhishek_biju_das_resume.pdf" download className="w-full sm:w-auto">
+                        <a href="Abhishek Biju Das Resume Software Engineer.pdf" download className="w-full sm:w-auto">
                             <button className="w-full px-8 py-3 glass text-white font-semibold rounded-full hover:bg-white/10 transition-colors">
                                 Resume
                             </button>
