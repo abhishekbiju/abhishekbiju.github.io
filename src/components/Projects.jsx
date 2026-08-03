@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "framer-motion";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
@@ -26,6 +25,7 @@ const Projects = () => {
       description: "FocusFuse is a Google Chrome extension that lets you focus on the tasks you need to do, your perfect productivity companion.",
       date: "December 2023",
       githubUrl: "https://github.com/abhishekbiju/focusfuse-chrome-extension",
+      privacyUrl: "/projects/focusfuse/privacy/",
     },
     {
       title: "Dash's Nemesis",
@@ -88,6 +88,15 @@ const Projects = () => {
                   {project.description}
                 </p>
               </div>
+
+              {project.privacyUrl && (
+                <a
+                  href={project.privacyUrl}
+                  className="text-sm text-primary hover:text-cyan-200 transition-colors mt-6 w-fit font-medium"
+                >
+                  Privacy Policy
+                </a>
+              )}
 
               <p className="font-mono text-xs text-secondary mt-6 font-medium tracking-wide">
                 {project.date}
