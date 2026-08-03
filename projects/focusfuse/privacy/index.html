@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="FocusFuse privacy policy: learn what data the Chrome extension handles, how it is stored, and how Chrome permissions are used."
+    />
+    <title>FocusFuse Privacy Policy | Abhishek Biju</title>
+    <link
+      rel="canonical"
+      href="https://abhishekbiju.github.io/projects/focusfuse/privacy/"
+    />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        color-scheme: dark;
+        font-family: "Inter", sans-serif;
+        color: #d1d5db;
+        background: #0a0a0a;
+        font-synthesis: none;
+        text-rendering: optimizeLegibility;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        min-width: 320px;
+        min-height: 100vh;
+        margin: 0;
+        background:
+          radial-gradient(circle at 15% 0%, rgb(6 182 212 / 12%), transparent 30rem),
+          radial-gradient(circle at 85% 20%, rgb(99 102 241 / 10%), transparent 34rem),
+          #0a0a0a;
+      }
+
+      a {
+        color: #67e8f9;
+        text-underline-offset: 0.2em;
+      }
+
+      a:hover {
+        color: #a5f3fc;
+      }
+
+      a:focus-visible {
+        border-radius: 0.25rem;
+        outline: 2px solid #06b6d4;
+        outline-offset: 4px;
+      }
+
+      .site-header {
+        border-bottom: 1px solid rgb(255 255 255 / 10%);
+        background: rgb(10 10 10 / 75%);
+        backdrop-filter: blur(16px);
+      }
+
+      .site-header__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: min(100% - 3rem, 72rem);
+        min-height: 4.75rem;
+        margin-inline: auto;
+      }
+
+      .brand {
+        color: #fff;
+        font-family: "Outfit", sans-serif;
+        font-size: 1.5rem;
+        font-weight: 700;
+        text-decoration: none;
+      }
+
+      .back-link {
+        color: #d1d5db;
+        font-size: 0.875rem;
+        font-weight: 600;
+        text-decoration: none;
+      }
+
+      main {
+        width: min(100% - 3rem, 54rem);
+        margin: 0 auto;
+        padding: 5rem 0 6rem;
+      }
+
+      .eyebrow {
+        margin: 0 0 1rem;
+        color: #22d3ee;
+        font-size: 0.78rem;
+        font-weight: 700;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+      }
+
+      h1,
+      h2 {
+        font-family: "Outfit", sans-serif;
+        color: #fff;
+      }
+
+      h1 {
+        max-width: 12ch;
+        margin: 0;
+        font-size: clamp(2.5rem, 8vw, 4.5rem);
+        line-height: 1.02;
+        letter-spacing: -0.035em;
+      }
+
+      .effective-date {
+        margin: 1.5rem 0 0;
+        color: #a5b4fc;
+        font-size: 0.875rem;
+        font-weight: 600;
+      }
+
+      .summary {
+        margin: 2rem 0 0;
+        color: #d1d5db;
+        font-size: clamp(1.05rem, 2vw, 1.2rem);
+        line-height: 1.8;
+      }
+
+      .policy {
+        margin-top: 3rem;
+        padding: clamp(1.5rem, 5vw, 3.5rem);
+        border: 1px solid rgb(255 255 255 / 10%);
+        border-radius: 1.25rem;
+        background: rgb(255 255 255 / 4%);
+        box-shadow: 0 1.5rem 5rem rgb(0 0 0 / 25%);
+      }
+
+      section + section {
+        margin-top: 2.75rem;
+        padding-top: 2.75rem;
+        border-top: 1px solid rgb(255 255 255 / 8%);
+      }
+
+      h2 {
+        margin: 0 0 1rem;
+        font-size: clamp(1.35rem, 3vw, 1.7rem);
+        line-height: 1.25;
+      }
+
+      p,
+      li {
+        line-height: 1.8;
+      }
+
+      p {
+        margin: 0;
+      }
+
+      p + p {
+        margin-top: 1rem;
+      }
+
+      ul {
+        margin: 1rem 0 1.25rem;
+        padding-left: 1.4rem;
+      }
+
+      li {
+        padding-left: 0.35rem;
+      }
+
+      li + li {
+        margin-top: 0.45rem;
+      }
+
+      code {
+        border: 1px solid rgb(255 255 255 / 10%);
+        border-radius: 0.35rem;
+        padding: 0.15em 0.35em;
+        color: #e5e7eb;
+        background: rgb(255 255 255 / 7%);
+        font-size: 0.9em;
+      }
+
+      .contact-link {
+        overflow-wrap: anywhere;
+      }
+
+      footer {
+        padding: 2rem 1.5rem;
+        border-top: 1px solid rgb(255 255 255 / 10%);
+        color: #6b7280;
+        font-size: 0.8rem;
+        text-align: center;
+      }
+
+      @media (max-width: 40rem) {
+        .site-header__inner,
+        main {
+          width: min(100% - 2rem, 54rem);
+        }
+
+        .site-header__inner {
+          min-height: 4.25rem;
+        }
+
+        main {
+          padding: 3.5rem 0 4rem;
+        }
+
+        .policy {
+          margin-top: 2.5rem;
+          border-radius: 1rem;
+        }
+
+        section + section {
+          margin-top: 2.25rem;
+          padding-top: 2.25rem;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        html {
+          scroll-behavior: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="brand" href="/">abhishek.</a>
+        <a class="back-link" href="/#projects">← Back to projects</a>
+      </div>
+    </header>
+
+    <main>
+      <p class="eyebrow">FocusFuse · Legal</p>
+      <h1>Privacy Policy</h1>
+      <p class="effective-date">Effective date: August 3, 2026</p>
+      <p class="summary">
+        FocusFuse is a local-first focus timer and distraction guard. It has no
+        account system, backend service, advertising, analytics SDK, or
+        telemetry.
+      </p>
+
+      <article class="policy">
+        <section>
+          <h2>Data FocusFuse handles</h2>
+          <p>
+            FocusFuse stores the following information locally in the user's
+            browser:
+          </p>
+          <ul>
+            <li>focus intentions and a bounded list of recent intentions;</li>
+            <li>
+              timer, Pomodoro, guard, notification, and sound settings;
+            </li>
+            <li>
+              user-selected guarded domains and per-interval exceptions;
+            </li>
+            <li>
+              focus interval timestamps, planned and actual focused duration,
+              mode, outcome, guard choice, and an optional abandonment
+              category;
+            </li>
+            <li>
+              streak, daily and weekly focus summaries, and aggregate
+              guard-intervention counts.
+            </li>
+          </ul>
+          <p>
+            On a domain for which the user explicitly grants Chrome site
+            access, FocusFuse temporarily reads the current hostname to decide
+            whether to display the distraction guard. It does not read or store
+            page content, URL paths, page titles, form data, or a history of
+            pages visited.
+          </p>
+        </section>
+
+        <section>
+          <h2>How data is used</h2>
+          <p>
+            This information is used only to provide FocusFuse's user-facing
+            timer, distraction guard, recovery, history, streak, and local
+            analytics features.
+          </p>
+        </section>
+
+        <section>
+          <h2>Storage and retention</h2>
+          <p>
+            All data is stored in <code>chrome.storage.local</code> on the
+            user's device. FocusFuse does not transmit it to the developer or
+            any third party. Data remains until the user clears it in
+            FocusFuse, removes the extension, or replaces settings and history
+            by importing a backup.
+          </p>
+          <p>
+            Users may export a local JSON backup. Exported files are created
+            only at the user's request and are controlled by the user.
+          </p>
+        </section>
+
+        <section>
+          <h2>Sharing and sale</h2>
+          <p>
+            FocusFuse does not sell, rent, share, or transfer user data. It
+            does not use user data for advertising, credit decisions, or
+            purposes unrelated to its single purpose.
+          </p>
+        </section>
+
+        <section>
+          <h2>Permissions</h2>
+          <p>
+            FocusFuse requests browser permissions only for local storage,
+            timer alarms, completion notifications and sound, toolbar and tab
+            coordination, and distraction guards. Website access is optional
+            and requested only for domains selected by the user. A permission
+            can be denied or revoked through Chrome at any time.
+          </p>
+        </section>
+
+        <section>
+          <h2>Limited Use</h2>
+          <p>
+            FocusFuse's use of information received from Chrome APIs complies
+            with the Chrome Web Store User Data Policy, including its Limited
+            Use requirements. Chrome API data is used only to provide or
+            improve FocusFuse's single user-facing purpose.
+          </p>
+        </section>
+
+        <section>
+          <h2>Changes</h2>
+          <p>
+            Material changes to these practices will be reflected in this
+            policy and disclosed through the extension or its store listing
+            before changed data handling begins.
+          </p>
+        </section>
+
+        <section>
+          <h2>Contact</h2>
+          <p>Questions or privacy requests can be submitted at:</p>
+          <p>
+            <a
+              class="contact-link"
+              href="https://github.com/abhishekbiju/focusfuse-chrome-extension/issues"
+              >https://github.com/abhishekbiju/focusfuse-chrome-extension/issues</a
+            >
+          </p>
+        </section>
+      </article>
+    </main>
+
+    <footer>© 2026 Abhishek Biju. FocusFuse Privacy Policy.</footer>
+  </body>
+</html>
