@@ -4,9 +4,17 @@ import { motion } from "framer-motion";
 const Experiences = () => {
   const experiences = [
     {
+      company: "Axon",
+      position: "Embedded SWE",
+      date: "Aug 2026 - Present",
+      description: [
+        "Fleet team."
+      ],
+    },
+    {
       company: "Dignifi",
       position: "Software Engineer",
-      date: "May 2025 - Present",
+      date: "May 2025 - Aug 2026",
       description: [
         "Spearheaded a database redesign—'LENS'—to centralize 12 core business systems, reducing latency for commercial risk reports by 80% and enabling real-time scalability for high-frequency financial data.",
         "Architected and administered AWS data infrastructure supporting 15+ ELT pipelines (dbt, Astro); optimized SQL transformations, improving data processing speed by 40% while maintaining 99.9% uptime and full data lineage.",
